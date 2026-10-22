@@ -1,0 +1,6 @@
+# Copy to backend.hcl, then: terraform init -backend-config=backend.hcl
+bucket       = "devops-task-tfstate-<ACCOUNT_ID>"
+key          = "devops-task/prod/terraform.tfstate"
+region       = "ap-south-1"
+encrypt      = true
+use_lockfile = true
